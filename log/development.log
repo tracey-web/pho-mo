@@ -1810,3 +1810,709 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (14.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 49]]
+  ↳ db/seeds.rb:1
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 50]]
+  ↳ db/seeds.rb:1
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 51]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 52]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 53]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 54]]
+  ↳ db/seeds.rb:1
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 57]]
+  ↳ db/seeds.rb:1
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (15.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "traceylea9@gmail.com"], ["password", "chicken"], ["username", "charlottelharrison"], ["name", "Charlotte Harrison"], ["avatar", "https://images.unsplash.com/profile-1620142405492-8002521cec6aimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "In 2010 I graduated from Goldsmiths, University of London. Since then I have worked for leading design agencies, Design Bridge and FITCH. Photography is a passion, which often crosses into my daily work. I specialise in street & portrait photography."], ["created_at", "2021-10-25 23:33:38.012596"], ["updated_at", "2021-10-25 23:33:38.012596"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (13.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 58]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "traceylea9@gmail.com"], ["password", "chicken"], ["username", "charlottelharrison"], ["name", "Charlotte Harrison"], ["avatar", "https://images.unsplash.com/profile-1620142405492-8002521cec6aimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "In 2010 I graduated from Goldsmiths, University of London. Since then I have worked for leading design agencies, Design Bridge and FITCH. Photography is a passion, which often crosses into my daily work. I specialise in street & portrait photography."], ["created_at", "2021-10-25 23:35:06.076847"], ["updated_at", "2021-10-25 23:35:06.076847"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail1@gmail.com"], ["password", "chicken"], ["username", "el_ego"], ["name", "Elena Gordienko"], ["dob", "1993-02-25"], ["avatar", "https://images.unsplash.com/profile-1596560596229-75e397c42c34image?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Я абрикос, на юге рос"], ["created_at", "2021-10-25 23:35:06.081814"], ["updated_at", "2021-10-25 23:35:06.081814"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail2@gmail.com"], ["password", "chicken"], ["username", "pixworthmedia"], ["name", "Eriks Abzinovs"], ["dob", "1972-07-18"], ["avatar", "https://images.unsplash.com/profile-1563200334273-0a1336be3e34?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Seeing life through a lens began as a hobby for me, however, it quickly developed into a passion and an outlet for my creativity. the quality of the image and trying to deliver something unique is a key part of my photography"], ["created_at", "2021-10-25 23:35:06.088177"], ["updated_at", "2021-10-25 23:35:06.088177"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail3@gmail.com"], ["password", "chicken"], ["username", "mattpopovich"], ["name", "Matt Popovich"], ["dob", "1981-09-08"], ["avatar", "https://images.unsplash.com/profile-1486040440552-1864100ad7c3?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Every photo I upload, including those published after June 2017, has been previously dedicated to the public domain under a CC0 1.0 license."], ["created_at", "2021-10-25 23:35:06.096268"], ["updated_at", "2021-10-25 23:35:06.096268"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail4@gmail.com"], ["password", "chicken"], ["username", "yokosaito"], ["name", "Yoko Saito"], ["dob", "1983-12-12"], ["avatar", "https://images.unsplash.com/profile-1558935199453-e6a5fbee3b7e?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "photographer"], ["created_at", "2021-10-25 23:35:06.104109"], ["updated_at", "2021-10-25 23:35:06.104109"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail4@gmail.com"], ["password", "chicken"], ["username", "kristinadelp"], ["name", "Kristina Delp"], ["dob", "2002-08-04"], ["avatar", "https://images.unsplash.com/profile-1609522357713-7de8f47be60bimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "connecticut cinematographer\na place for my still photography"], ["created_at", "2021-10-25 23:35:06.119111"], ["updated_at", "2021-10-25 23:35:06.119111"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:13
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:13
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:13
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:13
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:13
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1612185447368-a46e8094e2d5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.199908"], ["updated_at", "2021-10-25 23:35:06.199908"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1612090489399-2f60e1d5e15b?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.206524"], ["updated_at", "2021-10-25 23:35:06.206524"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1611743139239-2d87c5140dc8?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.214631"], ["updated_at", "2021-10-25 23:35:06.214631"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1608736328531-fbbdd1ccba71?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.222071"], ["updated_at", "2021-10-25 23:35:06.222071"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603835892619-223c85e588c9?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.232695"], ["updated_at", "2021-10-25 23:35:06.232695"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1601568470023-9e5203c3712f?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.238612"], ["updated_at", "2021-10-25 23:35:06.238612"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603817895210-ee1f99562fb1?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.243270"], ["updated_at", "2021-10-25 23:35:06.243270"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603817895210-ee1f99562fb1?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.248081"], ["updated_at", "2021-10-25 23:35:06.248081"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1601547903304-f44f3b054d49?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.253060"], ["updated_at", "2021-10-25 23:35:06.253060"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1599691823377-545103b0137c?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTF8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:06.259258"], ["updated_at", "2021-10-25 23:35:06.259258"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 59]]
+  ↳ db/seeds.rb:1
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 60]]
+  ↳ db/seeds.rb:1
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 61]]
+  ↳ db/seeds.rb:1
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 62]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 63]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "traceylea9@gmail.com"], ["password", "chicken"], ["username", "charlottelharrison"], ["name", "Charlotte Harrison"], ["avatar", "https://images.unsplash.com/profile-1620142405492-8002521cec6aimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "In 2010 I graduated from Goldsmiths, University of London. Since then I have worked for leading design agencies, Design Bridge and FITCH. Photography is a passion, which often crosses into my daily work. I specialise in street & portrait photography."], ["created_at", "2021-10-25 23:35:46.366251"], ["updated_at", "2021-10-25 23:35:46.366251"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail1@gmail.com"], ["password", "chicken"], ["username", "el_ego"], ["name", "Elena Gordienko"], ["dob", "1993-02-25"], ["avatar", "https://images.unsplash.com/profile-1596560596229-75e397c42c34image?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Я абрикос, на юге рос"], ["created_at", "2021-10-25 23:35:46.381723"], ["updated_at", "2021-10-25 23:35:46.381723"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail2@gmail.com"], ["password", "chicken"], ["username", "pixworthmedia"], ["name", "Eriks Abzinovs"], ["dob", "1972-07-18"], ["avatar", "https://images.unsplash.com/profile-1563200334273-0a1336be3e34?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Seeing life through a lens began as a hobby for me, however, it quickly developed into a passion and an outlet for my creativity. the quality of the image and trying to deliver something unique is a key part of my photography"], ["created_at", "2021-10-25 23:35:46.389543"], ["updated_at", "2021-10-25 23:35:46.389543"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail3@gmail.com"], ["password", "chicken"], ["username", "mattpopovich"], ["name", "Matt Popovich"], ["dob", "1981-09-08"], ["avatar", "https://images.unsplash.com/profile-1486040440552-1864100ad7c3?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Every photo I upload, including those published after June 2017, has been previously dedicated to the public domain under a CC0 1.0 license."], ["created_at", "2021-10-25 23:35:46.397271"], ["updated_at", "2021-10-25 23:35:46.397271"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail4@gmail.com"], ["password", "chicken"], ["username", "yokosaito"], ["name", "Yoko Saito"], ["dob", "1983-12-12"], ["avatar", "https://images.unsplash.com/profile-1558935199453-e6a5fbee3b7e?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "photographer"], ["created_at", "2021-10-25 23:35:46.404333"], ["updated_at", "2021-10-25 23:35:46.404333"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail4@gmail.com"], ["password", "chicken"], ["username", "kristinadelp"], ["name", "Kristina Delp"], ["dob", "2002-08-04"], ["avatar", "https://images.unsplash.com/profile-1609522357713-7de8f47be60bimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "connecticut cinematographer\na place for my still photography"], ["created_at", "2021-10-25 23:35:46.411951"], ["updated_at", "2021-10-25 23:35:46.411951"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:13
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:13
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:13
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:13
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1612185447368-a46e8094e2d5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.500595"], ["updated_at", "2021-10-25 23:35:46.500595"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1612090489399-2f60e1d5e15b?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.505820"], ["updated_at", "2021-10-25 23:35:46.505820"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1611743139239-2d87c5140dc8?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.513276"], ["updated_at", "2021-10-25 23:35:46.513276"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1608736328531-fbbdd1ccba71?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.520498"], ["updated_at", "2021-10-25 23:35:46.520498"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603835892619-223c85e588c9?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.527168"], ["updated_at", "2021-10-25 23:35:46.527168"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1601568470023-9e5203c3712f?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.538114"], ["updated_at", "2021-10-25 23:35:46.538114"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603817895210-ee1f99562fb1?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.542693"], ["updated_at", "2021-10-25 23:35:46.542693"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603817895210-ee1f99562fb1?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.546919"], ["updated_at", "2021-10-25 23:35:46.546919"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1601547903304-f44f3b054d49?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.551859"], ["updated_at", "2021-10-25 23:35:46.551859"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1599691823377-545103b0137c?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTF8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:46.556695"], ["updated_at", "2021-10-25 23:35:46.556695"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(228921142723610610)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (13.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:1
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:1
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:1
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "traceylea9@gmail.com"], ["password", "chicken"], ["username", "charlottelharrison"], ["name", "Charlotte Harrison"], ["avatar", "https://images.unsplash.com/profile-1620142405492-8002521cec6aimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "In 2010 I graduated from Goldsmiths, University of London. Since then I have worked for leading design agencies, Design Bridge and FITCH. Photography is a passion, which often crosses into my daily work. I specialise in street & portrait photography."], ["created_at", "2021-10-25 23:35:54.839968"], ["updated_at", "2021-10-25 23:35:54.839968"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (13.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail1@gmail.com"], ["password", "chicken"], ["username", "el_ego"], ["name", "Elena Gordienko"], ["dob", "1993-02-25"], ["avatar", "https://images.unsplash.com/profile-1596560596229-75e397c42c34image?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Я абрикос, на юге рос"], ["created_at", "2021-10-25 23:35:54.856464"], ["updated_at", "2021-10-25 23:35:54.856464"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail2@gmail.com"], ["password", "chicken"], ["username", "pixworthmedia"], ["name", "Eriks Abzinovs"], ["dob", "1972-07-18"], ["avatar", "https://images.unsplash.com/profile-1563200334273-0a1336be3e34?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Seeing life through a lens began as a hobby for me, however, it quickly developed into a passion and an outlet for my creativity. the quality of the image and trying to deliver something unique is a key part of my photography"], ["created_at", "2021-10-25 23:35:54.863937"], ["updated_at", "2021-10-25 23:35:54.863937"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail3@gmail.com"], ["password", "chicken"], ["username", "mattpopovich"], ["name", "Matt Popovich"], ["dob", "1981-09-08"], ["avatar", "https://images.unsplash.com/profile-1486040440552-1864100ad7c3?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "Every photo I upload, including those published after June 2017, has been previously dedicated to the public domain under a CC0 1.0 license."], ["created_at", "2021-10-25 23:35:54.869724"], ["updated_at", "2021-10-25 23:35:54.869724"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail4@gmail.com"], ["password", "chicken"], ["username", "yokosaito"], ["name", "Yoko Saito"], ["dob", "1983-12-12"], ["avatar", "https://images.unsplash.com/profile-1558935199453-e6a5fbee3b7e?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "photographer"], ["created_at", "2021-10-25 23:35:54.874453"], ["updated_at", "2021-10-25 23:35:54.874453"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password", "username", "name", "dob", "avatar", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "testemail4@gmail.com"], ["password", "chicken"], ["username", "kristinadelp"], ["name", "Kristina Delp"], ["dob", "2002-08-04"], ["avatar", "https://images.unsplash.com/profile-1609522357713-7de8f47be60bimage?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"], ["bio", "connecticut cinematographer\na place for my still photography"], ["created_at", "2021-10-25 23:35:54.879114"], ["updated_at", "2021-10-25 23:35:54.879114"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:13
+  [1m[35m (14.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:13
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:13
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:13
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:13
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:13
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1612185447368-a46e8094e2d5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:54.968295"], ["updated_at", "2021-10-25 23:35:54.968295"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1612090489399-2f60e1d5e15b?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:54.975382"], ["updated_at", "2021-10-25 23:35:54.975382"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1611743139239-2d87c5140dc8?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:54.983279"], ["updated_at", "2021-10-25 23:35:54.983279"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1608736328531-fbbdd1ccba71?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:54.988176"], ["updated_at", "2021-10-25 23:35:54.988176"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603835892619-223c85e588c9?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:54.993103"], ["updated_at", "2021-10-25 23:35:54.993103"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1601568470023-9e5203c3712f?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:54.997641"], ["updated_at", "2021-10-25 23:35:54.997641"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603817895210-ee1f99562fb1?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:55.002196"], ["updated_at", "2021-10-25 23:35:55.002196"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1603817895210-ee1f99562fb1?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:55.016867"], ["updated_at", "2021-10-25 23:35:55.016867"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1601547903304-f44f3b054d49?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:55.024371"], ["updated_at", "2021-10-25 23:35:55.024371"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("photo", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "https://images.unsplash.com/photo-1599691823377-545103b0137c?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTF8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["location", "London"], ["created_at", "2021-10-25 23:35:55.031441"], ["updated_at", "2021-10-25 23:35:55.031441"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ db/seeds.rb:26
