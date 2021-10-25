@@ -1,0 +1,8 @@
+<h1>edit comment</h1>
+
+<%= comment.comment %>
+
+<div class="controls">
+  <%= link_to 'Edit comment', edit_comment_path(@comment) %>
+  <%= link_to 'Delete comment', @comment, :method => 'delete', :class => 'bananas', :data => { :confirm => 'Are you sure?' } %>
+</div>

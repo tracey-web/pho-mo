@@ -10,6 +10,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <nav>
+        <%= link_to 'All users', users_path %>
+        <%= link_to 'New user', new_user_path %>
+        |
+        <%= link_to 'All posts', posts_path %>
+        <%= link_to 'New posts', new_post_path %>
+      </nav>
+      <%= yield %>
+    </div>
   </body>
 </html>

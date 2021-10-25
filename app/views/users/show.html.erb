@@ -1,2 +1,10 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1><%= @user.name %></h1>
+
+  <% if @user.avatar.present? %>
+    <%= image_tag @user.avatar, :class => 'feature' %>
+  <% end %>
+
+<div class="controls">
+  <%= link_to 'Edit user', edit_user_path(@user) %>
+  <%= link_to 'Delete user', @user, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>
