@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def create
     user = User.create user_params
-    redirect_to user # show page
+    redirect_to user 
   end
 
   def destroy
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
     redirect_to user
   end
 
-  private
+private
   def user_params 
     params.require(:user).permit(:username, :name, :password, :email, :avatar, :dob, :bio, :created_at, :updated_at, :following, :followers, :posts)
   end
