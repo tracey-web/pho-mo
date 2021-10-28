@@ -1,15 +1,62 @@
-<h1><%= @user.name %></h1>
 
-  <% if @user.avatar.present? %>
-    <%= image_tag @user.avatar, :class => 'feature' %>
-  <% end %>
-
-<div class="controls">
-
-  <% if @current_user.admin? %>
-    <%= link_to 'Edit user', edit_user_path(@user) %>
-    <%= link_to 'Delete user', @user, :method => 'delete', :data => { :confirm => 'Delete #{ @user.email } Are you sure?' } %>  
-  <% else %>
-    <%= link_to 'Edit user', edit_user_path(@user) %>
+<div class="main-profile-header">
+  <div class="main-avatar">
+    <div
+      class="profile-pic-wrapper main-profile-avatar"
+      style="background-image: url(<%= @user.avatar if @user.avatar.present? %>)"
+    ></div>
+  </div>
+  <div class="main-profile-info">
+    <div class="top-profile">
+      <h2 id="user-name"><%= @user.username if @user.username.present? %></h2>
+      <% if @is_current_user %>
+        <%= link_to edit_user_path(@user) do %>
+          <button>Edit Profile</button>
+        <% end %>
+        <i class="fas fa-cog"></i>
+      <% end %>
+    </div>
+    <div class="middle-profile">
+      <p><span id="posts-number"><%= @user.posts.count %></span> posts</p>
+      <p><span id="followers">0</span> followers</p>
+      <p><span id="following">0</span> following</p>
+    </div>
+    <div class="bottom-profile">
+      <p id="bio">
+        <%= @user.bio if @user.bio.present? %>
+      </p>
+    </div>
+    
+      <div class="middle-profile">
+        <% if @is_current_user %>
+          <%= link_to login_path, :method => 'delete'  do %>
+            <button>Sign out</button>
+          <% end %>
+        <% end %>
+        <% if @current_user.admin? %>
+          <% unless @is_current_user %>
+            <%= link_to edit_user_path(@user) do %>
+              <button>Edit Profile</button>            
+            <% end %>
+          <% end %>
+          <%= link_to @user, :method => 'delete', :data => { :confirm => 'Delete #{ @user.email } Are you sure?' } do %>
+            <button>Delete Profile</button>
+          <% end %>
+        <% end %>
+      </div>
+    
+  </div>
+</div>
+<div id="post-parent" class="main-profile-posts">
+  <% @user.posts.each do |post| %>
+    <div class="profile-post">
+      <div class="post-content">
+        <%= cl_image_tag post.photo %>
+        <div class="links">
+          <a href=""><i class="fa fa-heart"></i><span></span></a>
+          <a href=""><i class="fa fa-comment-alt"></i><span></span></a>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>

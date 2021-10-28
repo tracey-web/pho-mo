@@ -1,0 +1,528 @@
+/*----------------- Body -----------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-pic-wrapper {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*----------------- Header -----------------*/
+
+header {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #dadada;
+}
+
+/*----------------- Header - Logo -----------------*/
+
+#header-logo {
+  padding: 6px 20px;
+  height: 50px;
+}
+
+/*----------------- Header - Search Box -----------------*/
+
+.box {
+  margin: 15px auto;
+  width: 200px;
+  height: 20px;
+}
+
+.search-input {
+  width: 200px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.search-input input#search {
+  width: 200px;
+  height: 30px;
+  background: #fafafa;
+  border: 1px solid #dadada;
+  font-size: 10pt;
+  text-align: center;
+  color: #000000;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+
+  -webkit-transition: background-color 0.55s ease;
+  -moz-transition: background-color 0.55s ease;
+  -ms-transition: background-color 0.55s ease;
+  -o-transition: background-color 0.55s ease;
+  transition: background-color 0.55s ease;
+}
+
+.search-input input#search::-webkit-input-placeholder {
+  color: #dadada;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.search-input input#search:-moz-placeholder {
+  /* Firefox 18- */
+  color: #dadada;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.search-input input#search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #dadada;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.search-input input#search:-ms-input-placeholder {
+  color: #dadada;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+} /* Firefox 18- */
+input:focus::-moz-placeholder {
+  color: transparent;
+} /* Firefox 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+} /* oldIE */
+
+.search-input .icon {
+  position: absolute;
+  padding-top: 8px;
+  padding-left: 50px;
+  font-size: 12px;
+  z-index: 1;
+  color: #dadada;
+}
+
+.search-input input#search:hover,
+.search-input input#search:focus,
+.search-input input#search:active {
+  outline: none;
+  background: #ffffff;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+/*----------------- Header - Navigation Icons -----------------*/
+
+#top-nav {
+  padding: 6px 20px;
+}
+
+.nav-icon {
+  font-size: 1em;
+  padding: 18px 8px;
+}
+
+.nav-a {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------- Main -----------------*/
+
+main {
+  background-color: #fafafa;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#central-feed {
+  width: 600px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.main-box {
+  padding: 5px 20px;
+  margin: 40px auto 0 auto;
+
+  background: #ffffff;
+  border: 1px solid #dadada;
+}
+
+/*----------------- Main - Suggested Follow List -----------------*/
+#suggested-follows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggested-follow {
+  margin: 0;
+}
+
+.suggested-follow-profile {
+  display: inline-block;
+}
+
+h4 {
+  text-align: center;
+  margin: 4px 0 15px 0;
+  font-family: "Arimo", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+/*----------------- Main - Posts -----------------*/
+
+.feed-post {
+  min-height: 600px;
+}
+
+.post-head-user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-head-user-items {
+  display: flex;
+}
+
+.post-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+h2 {
+  padding: 0 6px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  align-self: center;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  align-self: center;
+}
+
+.post-menu {
+  display: flex;
+  align-self: center;
+}
+
+.post-content {
+  margin: 0 -20px;
+}
+
+.post-content img {
+  width: 100%;
+}
+
+.post-footer {
+  display: block;
+}
+
+.post-footer-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-likes {
+  display: flex;
+}
+
+.post-likes-users {
+  display: flex;
+}
+
+.caption {
+  display: flex;
+}
+
+.post-likes-avatar {
+  width: 25px;
+  height: 25px;
+}
+
+.new-comment {
+  display: flex;
+  margin: 0 -20px;
+  border-top: 1px solid #dadada;
+  align-items: center;
+}
+
+/*----------------- Profile Page -----------------*/
+
+button {
+  width: auto;
+  padding: 0 20px;
+  margin: 10px 20px;
+  height: 30px;
+  background: #fafafa;
+  border: 1px solid #dadada;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.main-profile-info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 28px;
+}
+
+.main-profile-header {
+  width: 800px;
+  margin: 0px auto;
+  padding: 20px 5px;
+  display: flex;
+  border-bottom: 1px solid #dadada;
+}
+
+.main-profile-avatar {
+  width: 175px;
+  height: 175px;
+  margin: 30px;
+}
+
+.top-profile {
+  display: flex;
+  margin-left: 45px;
+  align-items: center;
+}
+
+.middle-profile {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.middle-profile p {
+  margin-left: 25px;
+}
+
+.bottom-profile p {
+  margin-left: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 50px;
+  line-height: 24px;
+}
+
+.bottom-profile h4 {
+  font-family: "Arimo", sans-serif;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 2em;
+  margin-bottom: 6px;
+}
+
+.main-profile-posts {
+  width: 800px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.main-profile-posts .profile-post {
+  width: 33.33%;
+  width: calc((100% / 3) - 20px);
+  background-size: cover;
+  background-position: center;
+  height: 0;
+  padding-bottom: calc((100% / 3) - 20px);
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-profile-posts .profile-post .post-content {
+  position: absolute;
+  left: calc(50% + 20px);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0;
+  width: 100%;
+}
+
+.main-profile-posts .profile-post .post-content:before {
+  content: "";
+  transition: 0.3s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main-profile-posts .profile-post .post-content:hover:before {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.links {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.main-profile-posts .profile-post .post-content .links i {
+  font-size: 20px;
+  margin: 0 auto;
+  position: relative;
+  padding: 15px;
+}
+
+.main-profile-posts .profile-post .post-content a {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+.main-profile-posts .profile-post .post-content:hover .links {
+  opacity: 1;
+}
+
+#index-background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
+}
+
+input#username {
+  width: 100%;
+  height: 30px;
+  background: #fafafa;
+  border: 1px solid #dadada;
+  font-size: 10pt;
+  text-align: center;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+input#password {
+  width: 100%;
+  height: 30px;
+  background: #fafafa;
+  border: 1px solid #dadada;
+  font-size: 10pt;
+  text-align: center;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  padding: 0 20px 20px 20px;
+}
+
+#login-logo {
+  padding: 25px 20px 50px 20px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-login {
+  display: flex;
+  align-content: center;
+}
+
+.login-page {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.8);
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#login-button {
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  background: rgb(0, 171, 214);
+  width: 100%;
+  margin: 30px auto;
+}
+
+#forgot {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#sign-up {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 10px;
+  color: darkgrey;
+}
+
+#sign-up a {
+  color: darkorange;
+}
+
+#bio {
+  margin-top: 30px;
+}
+
+.like {
+  color: red;
+}
+
+@media only screen and (max-width: 799px) {
+  /* fixing fixed-width issues */
+  .main-profile-header,
+  .main-profile-posts {
+    width: 100%;
+  }
+}

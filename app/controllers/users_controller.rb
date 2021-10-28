@@ -11,6 +11,7 @@ class UsersController < ApplicationController
 
   def show
       @user = User.find params[:id]
+      @is_current_user = @user.id == @current_user.id
   end
 
   def delete

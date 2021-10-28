@@ -1,6 +1,67 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<% if @current_user.present? %>
-  <h1>Welcome back <%= @current_user.email %></h1>
-<% end %>
+<div id="central-feed">
+  <div id="suggested-follows" class="suggested-follow main-box">
+    <% @users.each do | user | %>
+      <%= link_to user do %>
+        <div class="suggested-follow-profile">
+          <div
+            class="profile-pic-wrapper"
+            style="background-image: url(<%= user.avatar if user.avatar.present? %>)"
+          ></div>
+          <h4><%= user.username if user.username.present? %></h4>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div id="news-feed">
+    <% @posts.each do |post| %>
+      <%= link_to post do %>
+        <section class="feed-post main-box">
+          <div class="post-head-user">
+            <div class="post-head-user-items">
+              <div
+                class="post-avatar profile-pic-wrapper"
+                style="background-image: url(<%= post.user.avatar if post.user.present? %>)"
+              ></div>
+              <h2><%= post.user.email if post.user.present? %></h2>
+            </div>
+            <div class="post-menu"><i class="fas fa-ellipsis-h"></i></div>
+          </div>
+          <div class="post-content">
+            <%= cl_image_tag post.photo %>
+          </div>
+          <div class="post-footer">
+            <div class="post-footer-actions">
+              <div class="post-footer-actions-right">
+                <i class="far fa-heart nav-icon"></i>
+                <i class="far fa-comment-alt nav-icon"></i>
+                <i class="far fa-envelope nav-icon"></i>
+              </div>
+              <div class="post-footer-actions-left">
+                <i class="far fa-bookmark nav-icon"></i>
+              </div>
+            </div>
+            <div class="post-likes">
+              <div
+                class="post-likes-avatar profile-pic-wrapper"
+                style="background-image: url(./images/150.jpg)"
+              ></div>
+              <div class="post-likes-users">
+                <p>Liked by <h2>4</h2></p>
+              </div>
+            </div>
+            
+            <div class="new-comment">
+              <div class="emoji-keyboard">
+                <i class="far fa-smile nav-icon"></i>
+              </div>
+              <div class="comment-input">
+                <p>Comment</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      <% end %>
+      <%#= link_to image_tag(post.photo, :class => 'photo'), post %>
+    <% end %>
+  </div>
+</div>

@@ -4,26 +4,62 @@
     <title>Pho Mo</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= cloudinary_js_config %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./assets/favicon-16x16.png" />
   </head>
 
   <body>
-    <div class="container">
-      <nav>
-        <%= link_to 'Home', root_path %>
-        <% if @current_user.present? %>
-          <% if @current_user.admin? %>
-            <%= link_to 'All users', users_path %>
-          <% end %>
-          <%= link_to 'Post Feed', new_post_path %>
-          <%= link_to "Log out #{ @current_user.email }", login_path, :method => 'delete' %>
-        <% else %>
-          <%= link_to 'Sign up', new_user_path %>
-          <%= link_to 'Sign in', login_path %>
+  <% if @current_user.present? %>
+  <header>
+      <div id="logo">
+        <a href="/"
+          ><img src="/assets/phomo-black-text172.png" id="header-logo" />
+        </a>
+      </div>
+      <div id="search">
+        <div class="box">
+          <div class="search-input">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+      <nav id="top-nav">
+        <%= link_to root_path, :class => 'nav-a' do %>
+          <i class="fas fa-home nav-icon"></i>
+        <% end %>        
+        <a href="#" class="nav-a"
+          ><i class="far fa-envelope nav-icon"></i>
+        </a>
+        <a href="#" class="nav-a">
+          <i class="far fa-compass nav-icon"></i>
+          </a>
+        <a href="#" class="nav-a">
+          <i class="far fa-heart nav-icon"></i>
+        </a>
+        <% if @current_user.admin? %>
+            <%= link_to users_path, :class => 'nav-a' do %>
+              <i class="fas fa-users nav-icon"></i>
+            <% end %>
+        <% end %>
+        <%= link_to @current_user, :class => 'nav-a' do %>
+          <i class="far fa-user-circle nav-icon"></i>
         <% end %>
       </nav>
-      <%= yield %>
+    </header>
+    <% end %>
+    <div class="container">      
+      <main>
+        <%= yield %>
+      </main>
     </div>
   </body>
 </html>

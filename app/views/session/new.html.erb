@@ -1,15 +1,30 @@
-<h1>Log In</h1>
+<div
+  id="index-background"
+  style="background-image: url(./assets/background.png)"
+>
+  <div class="login-page">
+    <div>
+      <img id="login-logo" src="assets/phomo-black-text172.png" />
+      <div class="form-wrapper">
+        
+        <%= form_tag login_path do %>
+          <div class="input-wrapper">            
+            <%= email_field_tag :email, nil, :id => 'username', placeholder: 'Email' %>
+          </div>
 
-<%= form_tag login_path do %>
-  <div class="form-group">
-    <%= label_tag :email %>
-    <%= email_field_tag :email, nil, :class => 'form-control' %>
+          <div class="input-wrapper">            
+            <%= password_field_tag :password, nil, :id => 'password', placeholder: 'Password' %>
+          </div>
+
+          <%= button_tag 'Sign in', :type => 'submit', :id => 'login-button' %>
+          
+        <% end %>
+        <div id="forgot">Forgot Password?</div>
+        <div id="sign-up">
+          Don't have an account? <%= link_to 'Sign up', new_user_path %>
+        </div>
+      </div>
+    </div>
+    <footer>© 2021 PhoMo by Tracey Hill</footer>
   </div>
-
-  <div class="form-group">
-    <%= label_tag :password %>
-    <%= password_field_tag :password, nil, :class => 'form-control' %>
-  </div>
-
-  <%= submit_tag 'Sign in', :class => 'btn btn-info btn-lg' %>
-<% end %>
+</div>

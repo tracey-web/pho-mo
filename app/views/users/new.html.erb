@@ -1,4 +1,48 @@
-<h1>Sign up!</h1>
+<div
+  id="index-background"
+  style="background-image: url(/assets/background.png)"
+>
+  <div class="login-page">
+    <div>
+      <img id="login-logo" src="/assets/phomo-black-text172.png" />
+      <div class="form-wrapper">
+        
+        <% if @user.errors.any? %>
+          <ol>
+            <% @user.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ol>
+        <% end %>
+
+        <%= form_for @user do |f| %>
+          <div class="input-wrapper">            
+            <%= f.email_field :email, :id => 'username', placeholder: 'Email' %>
+          </div>
+
+          <div class="input-wrapper">            
+            <%= f.password_field :password, :id => 'password', placeholder: 'Password' %>
+          </div>
+
+          <div class="input-wrapper">            
+            <%= f.password_field :password_confirmation, :id => 'password', placeholder: 'Confirm Password' %>
+          </div>
+
+          <%= f.button 'Sign up', :type => 'submit', :id => 'login-button' %>
+        <% end %>
+
+        <div id="forgot">Forgot Password?</div>
+        <div id="sign-up">
+          Already have an account? <%= link_to 'Sign in', login_path %>
+        </div>
+      </div>
+    </div>
+    <footer>© 2021 PhoMo by Tracey Hill</footer>
+  </div>
+</div>
+
+
+
 
 <% if @user.errors.any? %>
   <ol>
