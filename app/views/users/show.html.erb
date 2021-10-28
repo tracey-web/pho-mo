@@ -5,6 +5,11 @@
   <% end %>
 
 <div class="controls">
-  <%= link_to 'Edit user', edit_user_path(@user) %>
-  <%= link_to 'Delete user', @user, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+
+  <% if @current_user.admin? %>
+    <%= link_to 'Edit user', edit_user_path(@user) %>
+    <%= link_to 'Delete user', @user, :method => 'delete', :data => { :confirm => 'Delete #{ @user.email } Are you sure?' } %>  
+  <% else %>
+    <%= link_to 'Edit user', edit_user_path(@user) %>
+  <% end %>
 </div>
