@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :check_for_login
+
   def index
     @posts = Post.all.sort_by {|post| post.created_at}.reverse!
   end
