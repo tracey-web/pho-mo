@@ -68,9 +68,11 @@ Demo - forgetting the format of the fake email addresses 🤣️ & changing the 
 
 Missing comments and other functionality, needing presentation and focusing too much on design.
 
-Question about time and assets - I had some assets from another project that was a prototype (no backend and mostly image-based), but for this project the code needed to be rewritten in CSS for Ruby on Rails to get the way I wanted it to be presented and to actually be used as a CRUD system/social media platform. 
+## Design
 
-The whole design of these site assets is my own from the logo, to the background image, to the favicon. These assets were created in Adobe Photoshop. The logo was done using Google Fonts. Site icons are all from Font Awesome. It was a great exercise in design thinking to work out how Instagram approached their application design and fun problem-solving how to get it done and similar as a single person rather than a team of experts. 
+Question during the demo about time and assets - I had some assets from another project that was a prototype (no backend and mostly image-based), but for this project the code needed to be rewritten to get the way I wanted it to be presented. The Ruby/Rails code needed to be fitted with HTML5, as well the CSS3 and to actually be wired up to the database so it could be used as a CRUD system/social media platform. 
+
+The whole design of these site assets is my own from the logo, to the background image, to the favicon. These assets were created in Adobe Photoshop. The logo was done using Google Fonts. Site icons are all from Font Awesome. It was a great exercise in design thinking to work out how Instagram approached their application design and fun problem-solving how to get it done and similar to the Instagram UX/UI as a single person rather than a team of experts. 
 
 ## Quick application stats
 
