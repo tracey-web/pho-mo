@@ -26092,3 +26092,73 @@ SyntaxError (/home/tracey/Projects/phomo/app/views/users/show.html.erb:42: synta
 app/views/users/show.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting '}'
 app/views/users/show.html.erb:42: syntax error, unexpected '}', expecting end
 app/views/users/show.html.erb:65: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/users/119" for ::1 at 2021-10-29 16:44:39 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"119"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 113], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 119], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 119]]
+  ↳ app/views/users/show.html.erb:20
+  Rendered users/show.html.erb within layouts/application (171.0ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fd1fddf6b88>:0x00007fd1fdabc120>
+Did you mean?  @user):
+    39:               <button>Edit Profile</button>            
+    40:             <% end %>
+    41:           <% end %>
+    42:           <%= link_to @user, :method => 'delete', :data => { :confirm => "Delete #{ user.email } Are you sure?" } do %>
+    43:             <button>Delete Profile</button>
+    44:           <% end %>
+    45:         <% end %>
+  
+app/views/users/show.html.erb:42:in `_app_views_users_show_html_erb__2877478278506778073_70269940396800'
+Started GET "/users/119" for ::1 at 2021-10-29 16:45:07 +1100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"119"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 113], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 119], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 119]]
+  ↳ app/views/users/show.html.erb:20
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 119]]
+  ↳ app/views/users/show.html.erb:51
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/119" for ::1 at 2021-10-29 16:45:21 +1100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CXZQqpFmr7idpPdfTA//VOaH9zNkTkrnk6FdPDBvibCyM5SA4UIUlID8y1bQBJpgUfSNwBLdNmindLwUKtGLqg==", "id"=>"119"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 113], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 119], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:54
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 119]]
+  ↳ app/controllers/users_controller.rb:54
+  [1m[35m (10.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:54
+Redirected to http://localhost:4000/users
+Completed 302 Found in 17ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/users" for ::1 at 2021-10-29 16:45:21 +1100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 113], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.5ms)
+
+

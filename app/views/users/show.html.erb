@@ -39,7 +39,7 @@
               <button>Edit Profile</button>            
             <% end %>
           <% end %>
-          <%= link_to @user, :method => 'delete', :data => { :confirm => "Delete #{ user.email } Are you sure?" } do %>
+          <%= link_to @user, :method => 'delete', :data => { :confirm => "Delete #{ @user.email } Are you sure?" } do %>
             <button>Delete Profile</button>
           <% end %>
         <% end %>
