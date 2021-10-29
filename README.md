@@ -83,9 +83,13 @@ The whole design of these site assets is my own from the logo, to the background
 * System dependencies (additional)
 
     `gem 'bcrypt', '~> 3.1.7'`
+
     `gem 'cloudinary'`
+
     `gem 'pg', '>= 0.18', '< 2.0'`
+
     `gem 'rails_12factor', group: :production`
+    
 
 * Database creation
 
