@@ -493,11 +493,24 @@ input#password {
   margin-top: 30px;
 }
 
+#forgot2 {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+
 #sign-up {
   font-weight: 500;
   font-size: 12px;
   text-align: center;
   margin-top: 40px;
+}
+
+#sign-up2 {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 footer {
@@ -508,6 +521,10 @@ footer {
 }
 
 #sign-up a {
+  color: darkorange;
+}
+
+#sign-up2 a {
   color: darkorange;
 }
 
