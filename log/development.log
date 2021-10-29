@@ -26276,3 +26276,58 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/login" for ::1 at 2021-10-29 18:10:08 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-29 18:10:28 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lUdVNSy+1zI1BmE2Jz0v0OBthgWa3dTFWnlIBrXYjAqNwOnZpeOmZFoyQ4u942iMMK6jLu3FtoeuMAc6Je55Yw==", "email"=>"testinfo@gmail.com", "password"=>"[FILTERED]", "button"=>""}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testinfo@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:4000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2021-10-29 18:10:28 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-29 18:10:43 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"brZRG2/ui3vxc3IwUTJFv+6qNfmrhIsjW5qTL814ZGDV85UxH8owV+wrTjnNOSCLWdlPCt0X96xvT3IH18Zmeg==", "email"=>"testinfo@gmail.com", "password"=>"[FILTERED]", "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testinfo@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:4000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2021-10-29 18:10:43 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-10-29 18:11:04 +1100
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M5DjEq+INoyJdWwP+i2XtvEjMevFdz9ud4Bid5HBImyI1Sc436yNoJQtUAZmJvKCRlBLGLPkQ+FDVYNfi38gdg==", "email"=>"testinfo@gmail.com", "password"=>"[FILTERED]", "button"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testinfo@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:4000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2021-10-29 18:11:04 +1100
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
