@@ -22,6 +22,7 @@ class UsersController < ApplicationController
     else
       @user = @current_user
     end
+    redirect_to root_path
   end
   
   def edit
