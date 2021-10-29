@@ -57,7 +57,9 @@ Responsiveness is not implemented.
 
 Working everything into a week.
 
-Demo - forgetting the format of the fake email addresses 🤣️ & changing the users_controller to check for login without naming up exceptions 
+Demo - forgetting the format of the fake email addresses 🤣️ & changing the users_controller.rb to check for login without naming up exceptions [:new, :create] 🙄️
+
+Missing comments and other functionality, needing presentation and focusing too much on design.
 
 Question about time and assets - I had some assets from another project that was a prototype, but the code needed to be rewritten in CSS for Ruby on Rails to get the way I wanted it to be presented.
 
@@ -85,12 +87,12 @@ Question about time and assets - I had some assets from another project that was
         ```heroku create --stack heroku-18```
 
     Deployed to Heroku. Run each update:
-        * rails db:migrate
-        * rails db:seed
-        * git add .
-        * git commit -m "your message"
-        * git push origin master
-        * git push heroku master
-        * heroku run rails db:migrate
-        * heroku run rails db:seed
-        * heroku open
+     ```rails db:migrate
+        rails db:seed
+        git add .
+        git commit -m "your message"
+        git push origin master
+        git push heroku master
+        heroku run rails db:migrate
+        heroku run rails db:seed
+        heroku open```
