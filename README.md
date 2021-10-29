@@ -1,5 +1,12 @@
 # Photo Momento (Pho-Mo) - An Instagram-like web interface
 
+Heroku:
+https://pho-mo.herokuapp.com/login
+
+GitHub:
+https://github.com/tracey-web/pho-mo
+
+
 ## About
 
 This project demonstrates skills I've had the opportunity to focus and improve on over the last 6 weeks, while working with Ruby, Rails, CSS, PostgreSQL, HTML, JavaScript, and application design/deployment.
