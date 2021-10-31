@@ -1,10 +1,8 @@
 # Photo Momento (Pho-Mo) - An Instagram-like web interface
 
-Live demo on Heroku:
-https://pho-mo.herokuapp.com/login
+Live demo on [Heroku](https://pho-mo.herokuapp.com/login "Pho-Mo Login")
 
-Code on GitHub:
-https://github.com/tracey-web/pho-mo
+Code on [GitHub](https://github.com/tracey-web/pho-mo "Tracey's Code on GitHub")
 
 
 ## About
