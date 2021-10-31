@@ -1,9 +1,9 @@
 # Photo Momento (Pho-Mo) - An Instagram-like web interface
 
-Heroku:
+Live demo on Heroku:
 https://pho-mo.herokuapp.com/login
 
-GitHub:
+Code on GitHub:
 https://github.com/tracey-web/pho-mo
 
 
@@ -11,7 +11,7 @@ https://github.com/tracey-web/pho-mo
 
 This project demonstrates skills I've had the opportunity to focus and improve on over the last 6 weeks, while working with Ruby, Rails, CSS, PostgreSQL, HTML, JavaScript, and application design/deployment.
 
-The project itself is a web-based app that's designed for image sharing, similar to Instagram, and while it's not solving 'new' problems, unlike Instagram it enables the user to upload posts from their computer to the web-based/hosted app. Pho-Mo has been deployed to run off Heroku and uses the Cloudinary api as a way of storing user images for use in post-feeds and user profiles.
+The project itself is a web-based app that's designed for image sharing, similar to Instagram, and while it's not solving 'new' problems, unlike Instagram it enables the user to upload posts from their computer to the web-based/hosted app. Pho-Mo has been deployed to run off Heroku and uses the Cloudinary api as a way of storing user images for use in post-feeds and (eventually) user profiles.
 
 ## Database Models - PostgreSQL
 
@@ -52,27 +52,42 @@ The edit user view allows a user to edit their profile (avatars are currently li
 
 ## Next steps for Pho Mo
 
-Comments views are not yet implemented - so this will be next to implement.
+Comments views as they are not yet implemented.
 
 Follows and followers are also high on the implementation list.
 
-Adding the location to the post via a geocoder or Google APIs
+Adding the location to the post via a geocoder or Google APIs (based on the user's browser). 
 
 Responsiveness is not implemented.
 
 ## Problem points
 
-Working everything into a week.
+Working the whole project (from concept to delivery) into a week.
 
-Demo - forgetting the format of the fake email addresses 🤣️ & changing the users_controller.rb to check for login without naming up exceptions [:new, :create] 🙄️
+Demo - forgetting the format of the fake email addresses 🤣️ & changing the users_controller.rb at the last minute to check for login without naming up exceptions [:new, :create] 🙄️
 
-Missing comments and other functionality, needing presentation and focusing too much on design.
+Missing post comments and other functionality, the tendency to move into the UX/UI before CRUD was 100% complete and focusing too much on design.
 
 ## Design
 
 Question during the demo about time and assets - I had some assets from another project that was a prototype (no backend and mostly image-based), but for this project the code needed to be rewritten to get the way I wanted it to be presented. The Ruby/Rails code needed to be fitted with HTML5, as well the CSS3 and to actually be wired up to the database so it could be used as a CRUD system/social media platform. 
 
 The whole design of these site assets is my own from the logo, to the background image, to the favicon. These assets were created in Adobe Photoshop. The logo was done using Google Fonts. Site icons are all from Font Awesome. It was a great exercise in design thinking to work out how Instagram approached their application design and fun problem-solving how to get it done and similar to the Instagram UX/UI as a single person rather than a team of experts. 
+
+## Usage
+
+1. Click Sign-up to create a user account with an email and password (confirm password)
+    * contact me if you'd like access to admin rights (see all users and remove user profiles)
+2. After login click the + icon in the top-right of the navigation menu to add a post
+    * upload a picture from your computer. Give it a description and location.
+3. Click the profile picture icon in the top right navigation menu to view the image on your profile.
+4. Click the home picture icon in the top righ or the 'Photo Momento' logo in the top left to navigate to the 'all posts' feed.
+
+Features to come are:
+* adding comments, 
+* liking posts and,
+* following other users
+
 
 ## Quick application stats
 
@@ -89,17 +104,17 @@ The whole design of these site assets is my own from the logo, to the background
     `gem 'pg', '>= 0.18', '< 2.0'`
 
     `gem 'rails_12factor', group: :production`
-    
+
 
 * Database creation
 
-    Used migrations and seed data to set-up the schema and tables via command line with Rails. Database is PostgreSQL.
+    Used migrations and seed data to set-up the schema and tables via command line with Rails. Database is [PostgreSQL](https://www.postgresql.org/download/linux/ubuntu/ "Download PostgreSQL for Ubuntu").
 
 * Image storage
 
-    https://cloudinary.com/
+    [Cloudinary](https://cloudinary.com/ "Cloudinary's Homepage")
 
-* Deployment instructions
+* Deployment:
 
     Heroku 18 - (because Ruby 2.6.2)
         ```heroku create --stack heroku-18```
