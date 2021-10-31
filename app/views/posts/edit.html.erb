@@ -1,3 +1,36 @@
-<h1>Edit Post</h1>
+<div id="central-feed">
+  <%= form_for @post, :html => { :multipart => true } do |f| %>
+        <section class="feed-post main-box">
+          <div class="post-head-user">
+            <div class="post-head-user-items">
+              <h2>Edit Post</h2>
+              <div
+                class="post-avatar profile-pic-wrapper"
+                style="background-image: url(<%#= post.user.avatar if post.user.present? %>)"
+              >
 
-<%= render :partial => 'form' %>
+              </div>
+              <h2><%#= post.user.email if post.user.present? %></h2>
+            </div>
+            <div class="post-menu"><i class="fas fa-ellipsis-h"></i></div>
+          </div>
+          <div class="post-content">
+            <%#= cl_image_tag post.photo %>
+              <%= f.label :description %>
+              <%= f.text_field :description %>
+              <%= f.label :location %>
+              <%= f.text_field :location %>
+          </div>
+          <div class="post-footer">
+            <div class="post-footer-actions">
+              <%= f.label :photo %>
+              <%= f.file_field :photo %>
+              <div class="post-footer-actions-left">
+              <%= f.submit "Create Post" %>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <% end %>
+  </div>

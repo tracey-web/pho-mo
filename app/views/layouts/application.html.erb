@@ -36,8 +36,9 @@
         <%= link_to root_path, :class => 'nav-a' do %>
           <i class="fas fa-home nav-icon"></i>
         <% end %>        
-        <a href="#" class="nav-a"
-          ><i class="far fa-envelope nav-icon"></i>
+        <%= link_to new_post_path, :class => 'nav-a' do %>
+          <i class="far fa-plus-square"></i>
+        <% end %>
         </a>
         <a href="#" class="nav-a">
           <i class="far fa-compass nav-icon"></i>
